@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: app
+    environment:
+      - API_BASE_URL=http://api:8000
+    ports:
+      - "8501:8501"
+networks:
+  default:
+    name: aidetect

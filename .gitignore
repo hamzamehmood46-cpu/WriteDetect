@@ -1,0 +1,14 @@
+.venv
+venv/
+venvcd/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+package.json
+package-lock.json
+*.log
+reports/
+data/
+finetune_data/
