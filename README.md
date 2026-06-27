@@ -37,7 +37,11 @@ This builds on the Project 1 submission (classical ML + deep learning detectors)
 | AI sources | GPT, Claude, Mistral, LLaMA, Falcon |
 | Split | Stratified 80/10/10 (ML); 5-fold CV (DL) |
 
-The dataset is perfectly balanced between human-authored and AI-generated text, sourced from a mix of major LLM providers to reduce single-model bias.
+The dataset is perfectly balanced between human-authored and AI-generated text, sourced from a mix of major LLM providers to reduce single-model bias. A small reference copy (`data/AI_vs_huam_train_dataset.xlsx`) and sample test essays (`data/test_data/`) are included in this repo.
+
+### Extended dataset (AI Judge fine-tuning)
+
+The LoRA fine-tuning of the AI Judge LLM (see `finetune_ai_judge_colab.ipynb`) uses a much larger public dataset instead: the Kaggle ["AI vs Human Text"](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text) dataset (`AI_Human.csv`, 487,235 rows). It isn't included in this repo due to its size (350MB) — download it from Kaggle directly if you want to re-run the fine-tuning notebook.
 
 ## Models Used
 
