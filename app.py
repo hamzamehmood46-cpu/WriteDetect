@@ -40,7 +40,7 @@ def download_nltk_resources():
     ]
     paths = {
         "punkt": "tokenizers/punkt",
-        "punkt_tab": "tokenizers/punkt",
+        "punkt_tab": "tokenizers/punkt_tab",
         "stopwords": "corpora/stopwords",
         "wordnet": "corpora/wordnet",
         "averaged_perceptron_tagger": "taggers/averaged_perceptron_tagger",
