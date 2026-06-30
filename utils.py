@@ -234,6 +234,7 @@ def generate_comparison_report_pdf_full(
                 pdf.cell(0, 5, f"   {word:<12} : {weight:+.3f}", ln=True)
             pdf.ln(1)
 
+    os.makedirs("reports", exist_ok=True)
     output_path = os.path.join(
         "reports", f"ai_vs_human_comparison_report ({filename}).pdf"
     )
